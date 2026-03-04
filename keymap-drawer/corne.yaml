@@ -10,7 +10,7 @@ layers:
   - Y
   - U
   - I
-  - {t: O, h: AltGr+O}
+  - O
   - P
   - $$mdi:backspace-outline$$
   - $$mdi:apple-keyboard-control$$
