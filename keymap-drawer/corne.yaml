@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BAS:
-  - ↹
+  - ESCAPE
   - Q
   - W
   - E
@@ -10,7 +10,7 @@ layers:
   - Y
   - U
   - I
-  - O
+  - {t: O, h: AltGr+O}
   - P
   - $$mdi:backspace-outline$$
   - $$mdi:apple-keyboard-control$$
@@ -20,10 +20,10 @@ layers:
   - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RSHIFT}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: RMETA}
+  - {t: ;, h: RIGHT ALT}
   - ''''
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -40,7 +40,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - LOW
   - ␣
-  - ⏎
+  - {t: ⏎, h: RSHIFT}
   - RAI
   - $$mdi:apple-keyboard-option$$
   LOW:
