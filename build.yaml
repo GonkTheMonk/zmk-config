@@ -283,7 +283,7 @@
 ---
 include:
 
-  ### AKTIVE BUILDS: Corne + nice_nano_v2 + OLED + RGB ###
+  ### AKTIVE BUILDS: Corne + nice_nano_v2 + OLED ###
 
   # Linke Haelfte (central) mit RGB + ZMK Studio
   - board: nice_nano_v2
@@ -297,6 +297,18 @@ include:
     shield: corne_right nice_oled
     snippet: rgb-config
     artifact-name: nice_corne_right_oled_rgb
+
+  # Linke Haelfte (central) ohne RGB + ZMK Studio
+  - board: nice_nano_v2
+    shield: corne_left nice_oled
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_Oled\"
+    artifact-name: nice_corne_left_oled
+    snippet: studio-rpc-usb-uart
+
+  # Rechte Haelfte (peripheral) ohne RGB
+  - board: nice_nano_v2
+    shield: corne_right nice_oled
+    artifact-name: nice_corne_right_oled
 
   ### SETTINGS_RESET ###
   - board: nice_nano_v2
